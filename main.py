@@ -90,7 +90,7 @@ if __name__ == '__main__':
         result = counter.most_common(1)[0][0]
         print result
         # Append it to results
-        results.append(result)
+        results.append(int(result))
     # Save if save equal true
     if save:
         saveResult(results)
