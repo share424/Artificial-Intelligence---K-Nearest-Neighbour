@@ -10,7 +10,7 @@ save = True
 
 # Function to read data train
 # Input : -
-# Output : array[0..n] of array[0..5] of float, last index is it class
+# Output : array[1..n] of array[1..6] of float, last index is it class
 def readDataTrain():
     with open('DataTrain_Tugas3_AI.csv') as file:
         reader = csv.reader(file, delimiter=',')
@@ -27,7 +27,7 @@ def readDataTrain():
 
 # Function to read data test
 # Input -
-# Output : array[0..n] of array[0..5] of float
+# Output : array[1..n] of array[1..5] of float
 def readDataTest():
     with open('DataTest_Tugas3_AI.csv') as file:
         reader = csv.reader(file, delimiter=',')
@@ -41,7 +41,7 @@ def readDataTest():
             data.append(map(lambda x: float(x), row[1:6]))
         return data
 
-# Function to measure distance between 2 data using euclidean distance algoritm
+# Function to measure distance between 2 data using euclidean distance algorithm
 # Input : array of float, array of float
 # Output : distance between 2 array of float
 def euclideanDistance(inputX, inputY):
@@ -80,7 +80,7 @@ if __name__ == '__main__':
             list_distance.append([euclideanDistance(test, train[:5]), train[5]])
         # Sort the distance Ascending
         list_distance.sort(key=(lambda x:x[0]))
-        # Slice the list, get the K first data
+        # Slice the list, get the first K data
         nearest_distance = list_distance[:K]
         # Slice between distance and class into individual list
         distance, class_type = zip(*nearest_distance)
