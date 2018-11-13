@@ -10,7 +10,7 @@ save = True
 
 # Function to read data train
 # Input : -
-# Output : array[0..n] of array[0..5] of float
+# Output : array[0..n] of array[0..5] of float, last index is it class
 def readDataTrain():
     with open('DataTrain_Tugas3_AI.csv') as file:
         reader = csv.reader(file, delimiter=',')
@@ -38,7 +38,6 @@ def readDataTest():
         for row in reader:
             # remove first column (Index column)
             # convert column 1 - 6 to float
-            # set last column to -1 which mean not classed yet
             data.append(map(lambda x: float(x), row[1:6]))
         return data
 
