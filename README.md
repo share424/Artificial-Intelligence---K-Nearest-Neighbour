@@ -10,7 +10,7 @@ There are 200 dataset for test our algoritm
 ### Tutorial
 Open your terminal and type
 ```
-python main.py [K] [saved]
+python main.py [K] [save]
 ```
-K is your K value, default = 10
-saved is boolean (true or false) for save the result to DataTebakan3.csv
+K is your K value, default = 10\n
+save is boolean (true or false) for save the result to DataTebakan3.csv
