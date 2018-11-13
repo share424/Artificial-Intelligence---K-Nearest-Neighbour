@@ -5,7 +5,7 @@ An algorithm for classification data, where there are 5 variable and class value
 There are 800 dataset with 5 variable and their class from 0 - 3
 
 ### Data Test
-There are 200 dataset for test our algoritm
+There are 200 dataset to test our algoritm
 
 ### Tutorial
 Open your terminal and type
