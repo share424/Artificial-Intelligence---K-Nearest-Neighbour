@@ -82,7 +82,7 @@ if __name__ == '__main__':
         list_distance.sort(key=(lambda x:x[0]))
         # Slice the list, get the first K data
         nearest_distance = list_distance[:K]
-        # Slice between distance and class into individual list
+        # Split between distance and class into individual list
         distance, class_type = zip(*nearest_distance)
         # Count the class type
         counter = collections.Counter(class_type)
