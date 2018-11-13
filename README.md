@@ -12,6 +12,6 @@ Open your terminal and type
 ```
 python main.py [K] [save]
 ```
-K is your K value, default = 10
+K is your K value, default is 10
 
-save is boolean (true or false) for save the result to DataTebakan3.csv
+save is boolean (true or false) for save the result to DataTebakan3.csv, default is true
