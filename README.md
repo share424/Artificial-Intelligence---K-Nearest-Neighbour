@@ -1,5 +1,5 @@
-# Artificial Intelligence - K-Nearest Neighbour
-An algorithm for classification data, where there are 5 variable and class value between 0 - 3
+# Artificial Intelligence - K-Nearest Neighbors
+An implementation of kNN algorithm in python. This project was used to complete my exercise.
 
 ### Data Train
 There are 800 dataset with 5 variable and their class from 0 - 3
